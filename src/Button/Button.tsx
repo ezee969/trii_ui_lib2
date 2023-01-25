@@ -10,11 +10,12 @@ const Button = ({ label, variant = 'primary', ...props }: ButtonProps) => {
   return (
     <button
       style={{
+        display: 'flex',
         backgroundColor: variant === 'primary' ? 'navy' : 'red',
         padding: '5px 15px',
         color: 'white',
         border: 'none',
-        borderRadius: '5px',
+        borderRadius: '60px',
         font: 'light',
       }}
       {...props}
