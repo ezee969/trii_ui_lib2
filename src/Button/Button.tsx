@@ -1,4 +1,5 @@
 import React, { HTMLAttributes } from 'react';
+import { Typography } from '@mui/material';
 
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   label: string;
@@ -18,7 +19,7 @@ const Button = ({ label, variant = 'primary', ...props }: ButtonProps) => {
       }}
       {...props}
     >
-      {label}
+      <Typography variant="h1">{label}</Typography>
     </button>
   );
 };
